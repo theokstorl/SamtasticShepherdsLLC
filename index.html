@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +16,42 @@
       color: #fff;
       padding: 20px;
       text-align: center;
+      position: relative; /* Added for positioning the menu */
+    }
+
+    /* Added styles for menu */
+    .menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      background-color: #444;
+      padding: 10px;
+      border-bottom: 1px solid #555;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu li:last-child {
+      border-bottom: none;
+    }
+
+    .menu-btn {
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    /* Hide menu initially */
+    .menu-content {
+      display: none;
     }
 
     main {
@@ -51,19 +86,41 @@
 <body>
   <header>
     <h1>Samtastic Shepherds LLC</h1>
+    <!-- Menu Button -->
+    <div class="menu-btn">Menu</div>
+    <!-- Menu Items -->
+    <ul class="menu menu-content">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#dogs">The Dogs</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
   </header>
 
   <main>
     <img src="Images/Logo.jpg" alt="Samtastic Shepherds Logo" class="logo">
     <h2>Welcome to Samtastic Shepherds LLC</h2>
-    <p>We specialize in breeding AKC registered, genetically tested, and high drive German Shepherds. Our goal is to provide healthy and well-tempered dogs that excel in various activities such as obedience, agility, and more.</p>
+    <!-- rest of your main
+
+
+  <p>We specialize in breeding AKC registered, genetically tested, and high drive German Shepherds. Our goal is to provide healthy and well-tempered dogs that excel in various activities such as obedience, agility, and more.</p>
     <p>Please note that this website is currently under construction, and we will be adding more information soon. We appreciate your patience and encourage you to check back for updates.</p>
     <p>If you have any inquiries or would like to learn more about our breeding program, feel free to contact the owner, Samantha Loose, at <a href="mailto:samantha@samtasticshepherds.com">samantha@samtasticshepherds.com</a>.</p>
   </main>
-
   <footer>
     <p>&copy; 2023 Samtastic Shepherds LLC. All rights reserved.</p>
   </footer>
-</body>
+  <!-- Adding JavaScript for menu toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const menuBtn = document.querySelector('.menu-btn');
+      const menuContent = document.querySelector('.menu-content');
 
+      menuBtn.addEventListener('click', () => {
+        // This will toggle the display of the menu
+        menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
 </html>
