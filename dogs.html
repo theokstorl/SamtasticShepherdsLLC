@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>The Dogs - Samtastic Shepherds LLC</title>
+				<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative; /* Needed for absolute positioning elements inside */
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0; /* Updated padding */
+      text-align: center;
+      position: relative; /* Maintain this for the positioning of the menu */
+    }
+	
+	h2 {
+	  text-align: center;
+	  margin-top: 10px; /* Adjust as needed for your design */
+	  margin-bottom: 10px; /* Adjust as needed for your design */
+	}
+
+    /* Menu button styling */
+    .menu-btn {
+      background-color: #444; /* Match with menu items */
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* Menu container styling */
+    .menu-content {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 60px; /* Height of the button plus some margin */
+      left: 20px;
+      background-color: #333;
+      border: 1px solid #fff;
+      z-index: 1000; /* Ensure it's on top of other elements */
+    }
+
+    /* Menu list styling */
+    .menu-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Menu list item styling */
+    .menu-content li {
+      background-color: #444;
+      border-bottom: 1px solid #555;
+      padding: 10px;
+      text-align: right;
+    }
+
+    /* Remove border from the last item */
+    .menu-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* Styling for menu links */
+    .menu-content a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+	  padding: 20px;
+	  text-align: center;
+	}
+
+	.logo {
+	  display: block;
+	  margin: 0 auto;
+	  max-width: 200px;
+	  height: auto;
+	}
+
+	.construction {
+	  text-align: center;
+	  font-style: italic;
+	  color: #888;
+	}
+    .dog-section {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .dog-header {
+	  padding: 10px;
+	  background-color: #f7f7f7;
+	  cursor: pointer;
+	  border-bottom: 1px solid #ccc;
+	  text-align: center; /* Center align the text */
+	}
+
+	.dog-header h3 {
+	  margin: 0;
+	}
+
+	.dog-header img {
+	  width: 200px; /* Set a fixed width for all images */
+	  height: 200px; /* Set a fixed height for all images */
+	  object-fit: cover; /* This will cover the area without stretching the image */
+	  border-radius: 5px; /* Optional: Adds rounded corners to the images */
+	}
+	
+	.dog-photo-gallery {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center; /* This will center the images within the container */
+	  gap: 10px; /* This sets a gap between the images */
+	}
+
+	.dog-photo-gallery img {
+	  width: 150px; /* Set a fixed width for all images */
+	  height: 150px; /* Set a fixed height for all images */
+	  object-fit: cover; /* This will cover the area without stretching the image */
+	  border-radius: 5px; /* Optional: Adds rounded corners to the images */
+	}
+	
+	.dog-content {
+      padding: 10px;
+      display: none; /* Hide content initially */
+    }
+
+	.dog-content p {
+	  text-align: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width: 800px; /* Adjust this as needed */
+	}
+
+    .dog-documents a {
+	  display: block; /* This makes the anchor tag behave like a block element */
+	  text-align: center; /* Centers the text inside the anchor tag */
+	  margin: 10px auto; /* Adds top and bottom margin and auto margin on left and right for centering */
+	}
+  </style>
+			</head>
+			<body>
+				<header>
+					<h1>Samtastic Shepherds LLC</h1>
+					<!-- Menu Button -->
+					<div class="menu-btn">☰ Menu</div>
+					<!-- Menu Items -->
+					<div class="menu-content">
+						<ul>
+							<li>
+								<a href="home.html">Home</a>
+							</li>
+							<li>
+								<a href="dogs.html">The Dogs</a>
+							</li>
+							<li>
+								<a href="services.html">Services</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<main>
+					<h2>The Dogs</h2>
+					<!-- Dog Section -->
+					
+					<!-- START METUS -->
+					
+					<div class="dog-section">
+						<div class="dog-header" onclick="toggleSection('dog1')">
+							<h3>Metus</h3>
+							<!-- Dog Primary Image -->
+							<img src="Metus/Metus8.JPG" alt="Dog Name">
+						</div>
+							<div class="dog-content" id="dog1">
+								<p>Metus, the esteemed alpha of our canine family, embodies unwavering composure and sound judgment. A stalwart guardian, he strategically oversees the pack, leading from both the forefront and a watchful distance. His innate ability to assess situations before taking action underscores his level-headed demeanor. While warmly welcoming to humans, Metus remains discerning, emitting a cautionary note when faced with unfamiliar faces. His multifaceted nature as a protector and a congenial companion leaves me with an immense sense of gratitude for such an exceptional dog.</p>
+								<!-- Photo Gallery -->
+								<div class="dog-photo-gallery">
+									<img src="Metus/MetusFather.JPG" alt="Dog Name Image 1">
+									<img src="Metus/MetusMother.JPG" alt="Dog Name Image 2">
+									<img src="Metus/MetusBaby1.JPG" alt="Dog Name Image 8">
+									<img src="Metus/MetusBaby2.JPG" alt="Dog Name Image 9">
+									<img src="Metus/MetusBaby3.JPG" alt="Dog Name Image 10">
+									<img src="Metus/Metus8.JPG" alt="Dog Name Image 1">
+									<img src="Metus/Metus7.JPG" alt="Dog Name Image 2">
+									<img src="Metus/Metus6.JPG" alt="Dog Name Image 3">
+									<img src="Metus/Metus5.JPG" alt="Dog Name Image 4">
+									<img src="Metus/Metus4.JPG" alt="Dog Name Image 5">
+									<img src="Metus/Metus3.JPG" alt="Dog Name Image 6">
+									<img src="Metus/Metus2.JPG" alt="Dog Name Image 7">
+								</div>
+										<!-- Documents -->
+										<div class="dog-documents">
+											<a href="Metus/MetusRegistration.pdf" target="blank" download>AKC Registration</a>
+											<a href="Metus/MetusPennHip.pdf" target="blank" download>Penn Hip Report</a>
+											<a href="Metus/MetusOFAElbow.pdf" target="blank" download>OFA Elbow Report</a>
+											<a href="Metus/MetusOFAHip.pdf" target="blank" download>OFA Hip Report</a>
+											<a href="Metus/MetusHealthCertificate.pdf" target="blank" download>Genetic Health Certificate</a>
+											<a href="Metus/MetusDiseaseReport.pdf" target="blank" download>Genetic Disease Report</a>
+											<!-- More documents as needed -->
+										</div>
+									</div>
+								</div>
+								
+								<!-- END METUS -->
+								
+								<!-- START MACHALI -->
+					
+					<div class="dog-section">
+						<div class="dog-header" onclick="toggleSection('dog2')">
+							<h3>Machali</h3>
+							<!-- Dog Primary Image -->
+							<img src="Machali/Machali1.JPG" alt="Dog Name">
+						</div>
+							<div class="dog-content" id="dog2">
+								<p>Meet Machali, a distinguished member of the Samtastic Shepherds family. Renowned for her commanding presence, Machali is fully focused on any task at hand, making her an ideal candidate for roles such as a hunting dog or search and rescue. Her exceptional work ethic surpasses that of any other dog in my pack, exemplifying an unparalleled drive towards productivity. While Machali's dedication to her duties is unmatched, her lovable nature shines through. As an alpha female, she effortlessly assumes a leadership role within the pack, ensuring harmony and order. Unlike many alphas, Machali's position is secure, allowing her to maintain the pack dynamics with poise and grace. Machali's refined personality traits make her a standout representative of our breeding program, embodying the perfect balance of focus, work ethic, and affection. Her contributions leave an indelible mark on the legacy of Samtastic Shepherds</p>
+								<!-- Photo Gallery -->
+								<div class="dog-photo-gallery">
+									<img src="Machali/MachaliBaby1.JPG" alt="Dog Name Image 1">
+									<img src="Machali/MachaliBaby2.JPG" alt="Dog Name Image 8">
+									<img src="Machali/MachaliBaby3.JPG" alt="Dog Name Image 9">
+									<img src="Machali/MachaliBaby4.JPG" alt="Dog Name Image 10">
+									<img src="Machali/Machali1.JPG" alt="Dog Name Image 1">
+									<img src="Machali/Machali2.JPG" alt="Dog Name Image 2">
+									<img src="Machali/Machali3.JPG" alt="Dog Name Image 3">
+									<img src="Machali/Machali4.JPG" alt="Dog Name Image 4">
+									<img src="Machali/Machali5.JPG" alt="Dog Name Image 5">
+								</div>
+										<!-- Documents -->
+										<div class="dog-documents">
+											<a href="Metus/MetusRegistration.pdf" target="blank" download>AKC Registration</a>
+											<a href="Metus/MetusPennHip.pdf" target="blank" download>Penn Hip Report</a>
+											<a href="Metus/MetusOFAElbow.pdf" target="blank" download>OFA Elbow Report</a>
+											<a href="Metus/MetusOFAHip.pdf" target="blank" download>OFA Hip Report</a>
+											<a href="Metus/MetusHealthCertificate.pdf" target="blank" download>Genetic Health Certificate</a>
+											<a href="Metus/MetusDiseaseReport.pdf" target="blank" download>Genetic Disease Report</a>
+											<!-- More documents as needed -->
+										</div>
+									</div>
+								</div>
+								
+								<!-- END MACHALI -->
+								
+							</main>
+							<footer>
+								<p>&copy; 2023 Samtastic Shepherds LLC. All rights reserved.</p>
+							</footer>
+							<script>
+    // JavaScript function to toggle the display of the dog's details
+    function toggleSection(dogId) {
+      var content = document.getElementById(dogId);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+		  const menuBtn = document.querySelector('.menu-btn');
+		  const menuContent = document.querySelector('.menu-content');
+
+		  menuBtn.addEventListener('click', () => {
+			// This will toggle the display of the menu
+			const isMenuVisible = window.getComputedStyle(menuContent).display !== 'none';
+			menuContent.style.display = isMenuVisible ? 'none' : 'block';
+		  });
+
+		  // Clicking anywhere outside the menu closes it
+		  document.addEventListener('click', function(event) {
+			const isClickInsideMenu = menuContent.contains(event.target) || menuBtn.contains(event.target);
+			if (!isClickInsideMenu) {
+			  menuContent.style.display = 'none';
+			}
+		  });
+		});
+	  </script>
+						</body>
+					</html>
